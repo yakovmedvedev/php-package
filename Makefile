@@ -1,11 +1,8 @@
 install:
 	composer install
 
-setup: install
-	composer run-script --working-dir=vendor/felixfbecker/language-server parse-stubs
-
 console:
-	psysh --config psysh.php
+	composer run-script psysh
 
 lint:
 	composer run-script phpcs -- --standard=PSR12 src tests
