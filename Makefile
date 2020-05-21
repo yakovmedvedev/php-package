@@ -12,3 +12,6 @@ lint-fix:
 
 test:
 	composer phpunit tests
+
+test-coverage:
+	composer phpunit tests -- --coverage-clover build/logs/clover.xml
