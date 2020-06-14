@@ -2,16 +2,16 @@ install:
 	composer install
 
 console:
-	composer run-script psysh
+	composer exec psysh
 
 lint:
-	composer run-script phpcs -- --standard=PSR12 src tests
+	composer exec phpcs -- --standard=PSR12 src tests
 
 lint-fix:
-	composer run-script phpcbf -- --standard=PSR12 src tests
+	composer exec phpcbf -- --standard=PSR12 src tests
 
 test:
-	composer phpunit tests
+	composer test
 
 test-coverage:
-	composer phpunit tests -- --coverage-clover build/logs/clover.xml
+	composer test -- --coverage-clover build/logs/clover.xml
