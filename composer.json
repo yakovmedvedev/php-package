@@ -11,10 +11,6 @@
   "description": "hexlet php-package",
   "license": "MIT",
   "scripts": {
-    "phpcs": "phpcs",
-    "psysh": "psysh",
-    "phpcbf": "phpcbf",
-    "phpunit": "phpunit",
     "test": "phpunit tests"
   },
   "autoload": {
@@ -26,7 +22,8 @@
   "require": {
     "tightenco/collect": "^5.6",
     "nesbot/carbon": "^2.32.2",
-    "voku/stringy": "^6.3"
+    "voku/stringy": "^6.3",
+    "psy/psysh": "@stable"
   },
   "require-dev": {
     "symfony/var-dumper": "^4.0",
