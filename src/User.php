@@ -2,12 +2,12 @@
 
 namespace Php\Package;
 
-/* use Illuminate\Support\Collection; */
+use Tightenco\Collect\Support\Collection;
 
 class User
 {
-    private $name;
-    private $children;
+    private string $name;
+    private Collection $children;
 
     public function __construct(string $name, array $children = [])
     {
@@ -20,7 +20,7 @@ class User
         return $this->name;
     }
 
-    public function getChildren()
+    public function getChildren(): Collection
     {
         return $this->children;
     }

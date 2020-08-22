@@ -7,7 +7,7 @@ use Php\Package\User;
 
 class UserTest extends TestCase
 {
-    public function testGetName()
+    public function testGetName(): void
     {
         $name = 'john';
         $children = [new User('Mark')];
