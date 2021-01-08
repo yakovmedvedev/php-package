@@ -1,2 +1,6 @@
 parameters:
-  checkMissingIterableValueType: false
+    checkMissingIterableValueType: false
+    level: 6
+    paths:
+        - src
+        - tests

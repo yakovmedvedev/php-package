@@ -22,11 +22,11 @@
   "require": {
     "tightenco/collect": "^5.6",
     "nesbot/carbon": "^2.32.2",
-    "symfony/string": "^5.1"
+    "symfony/string": "^5.1",
+    "phpstan/phpstan": "^0.12.65"
   },
   "require-dev": {
     "psy/psysh": "@stable",
-    "phpstan/phpstan": "^0.12.38",
     "phpstan/phpstan-phpunit": "^0.12.16",
     "phpstan/extension-installer": "^1.0",
     "symfony/var-dumper": "^4.0",
