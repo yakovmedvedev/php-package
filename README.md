@@ -14,6 +14,8 @@ Use <http://psysh.org/>
 ```sh
 $ git clone https://github.com/hexlet-boilerplates/php-package.git
 
+$ cd php-package
+
 $ make install
 ```
 
