@@ -20,7 +20,7 @@ Use <http://psysh.org/>
 ## Setup
 
 ```bash
-git clone https://github.com/hexlet-boilerplates/php-package.gi
+git clone https://github.com/hexlet-boilerplates/php-package.git
 cd php-package
 make install
 ```
