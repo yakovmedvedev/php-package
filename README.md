@@ -25,6 +25,14 @@ cd php-package
 make install
 ```
 
+## Run linter
+
+```sh
+make lint
+```
+
+See configs [php.xml](./phpcs.xml) and [phpstan.neon](./phpstan.neon)
+
 ## Run tests
 
 ```sh
