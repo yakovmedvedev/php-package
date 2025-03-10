@@ -19,9 +19,12 @@ Use <http://psysh.org/>
 
 ## Setup
 
+Setup [SSH](https://docs.github.com/en/authentication/connecting-to-github-with-ssh) before clone:
+
 ```bash
-git clone https://github.com/hexlet-boilerplates/php-package.git
+git clone git@github.com:hexlet-boilerplates/php-package.git
 cd php-package
+
 make install
 ```
 
