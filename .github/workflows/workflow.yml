@@ -31,6 +31,9 @@ jobs:
         # Run Linter
         run: make lint
 
+      - name: Run tests
+        run: make test
+
       - name: SonarQube Scan
         uses: SonarSource/sonarqube-scan-action@v5
         env:
