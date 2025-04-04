@@ -43,5 +43,5 @@ jobs:
           args: >
             -Dsonar.projectKey=hexlet-boilerplates_php-package
             -Dsonar.organization=hexlet-boilerplates
-            -Dsonar.sources=.
+            -Dsonar.sources=src/
             -Dsonar.php.coverage.reportPaths=build/logs/clover.xml
