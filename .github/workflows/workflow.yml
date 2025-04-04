@@ -39,5 +39,8 @@ jobs:
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
         with:
+          # NOTE: https://sonarcloud.io/project/information?id=hexlet-boilerplates_php-package
           args: >
+            -Dsonar.projectKey=hexlet-boilerplates_php-package
+            -Dsonar.organization=hexlet-boilerplates
             -Dsonar.php.coverage.reportPaths=build/logs/clover.xml
