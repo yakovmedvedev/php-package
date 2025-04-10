@@ -47,8 +47,8 @@ make test
 ## Test Coverage
 
 * see `phpunit.xml`
-* See [codeclimate documentation](https://docs.codeclimate.com/docs/configuring-test-coverage)
-* add `CC_TEST_REPORTER_ID` to workflow as SECRETS ENV VARIABLE (for safety)
+* See [sonarcloud documentation](https://docs.sonarsource.com/sonarqube-cloud/enriching/test-coverage/php-test-coverage/)
+* add `SONAR_TOKEN` to workflow as SECRETS ENV VARIABLE (for safety)
 
 [![Hexlet Ltd. logo](https://raw.githubusercontent.com/Hexlet/assets/master/images/hexlet_logo128.png)](https://hexlet.io/?utm_source=github&utm_medium=link&utm_campaign=php-package)
 
