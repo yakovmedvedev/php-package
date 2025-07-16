@@ -15,7 +15,7 @@ jobs:
     steps:
         # Check-out repository under GitHub workspace
         # https://github.com/actions/checkout
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
         # Step's name
       - name: Setup PHP
         # Action gives to setup the PHP environment to test application
@@ -23,22 +23,19 @@ jobs:
         uses: shivammathur/setup-php@v2
         with:
           # Specify the PHP version
-          php-version: '8.2'
+          php-version: '8.3'
       - name: Install
         # Install project
         run: make install
       - name: Run linter
         # Run Linter
         run: make lint
-      # Publish code coverage on Code Climate
-      # https://github.com/paambaati/codeclimate-action
-      # NOTE: uncomment for using workflow
-      # - name: Run test & publish code coverage
-      #   uses: paambaati/codeclimate-action@v5
-      #   # Add Code Climate secret key
-      #   env:
-      #     CC_TEST_REPORTER_ID: ${{ secrets.CC_TEST_REPORTER_ID }}
-      #   with:
-      #     coverageCommand: make test-coverage
-      #     coverageLocations: build/logs/clover.xml:clover
-      #     debug: true
+
+        # https://docs.sonarsource.com/sonarqube-cloud/enriching/test-coverage/php-test-coverage/
+      - name: Run tests
+        run: make test-coverage
+
+      - name: SonarQube Scan
+        uses: SonarSource/sonarqube-scan-action@v5
+        env:
+          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
